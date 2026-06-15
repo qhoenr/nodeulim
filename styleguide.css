@@ -1,0 +1,43 @@
+:root {
+  --main: rgba(255, 25, 63, 1);
+  --primaryp-50: rgba(232, 238, 236, 1);
+  --primaryp-60: rgba(220, 229, 226, 1);
+  --primaryp-75: rgba(182, 201, 195, 1);
+  --primaryp-100: rgba(98, 138, 125, 1);
+  --primaryp-200: rgba(67, 116, 100, 1);
+  --primarymain: rgba(20, 81, 61, 1);
+  --primaryp-400: rgba(18, 74, 56, 1);
+  --primaryp-600: rgba(11, 45, 34, 1);
+  --grayscalewhite: rgba(255, 255, 255, 1);
+  --grayscaleg-1: rgba(244, 244, 244, 1);
+  --grayscaleg-3: rgba(218, 218, 218, 1);
+  --grayscaleg-4: rgba(183, 183, 183, 1);
+  --grayscaleg-5: rgba(151, 151, 151, 1);
+  --grayscaleg-6: rgba(110, 110, 110, 1);
+  --grayscaleg-7: rgba(91, 91, 91, 1);
+  --grayscaleg-8: rgba(60, 60, 60, 1);
+  --grayscaleg-9: rgba(28, 28, 28, 1);
+  --grayscaleblack: rgba(18, 18, 18, 1);
+  --card: 0px 4px 12px 0px rgba(0, 0, 0, 0.06);
+  --color-mode-colors-icons: rgba(0, 0, 0, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-color-mode-mode="light-mode">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-color-mode-mode="light-mode"] {
+  --color-mode-colors-icons: rgba(0, 0, 0, 1);
+}
+
+[data-color-mode-mode="dark-mode"] {
+  --color-mode-colors-icons: rgba(255, 255, 255, 1);
+}

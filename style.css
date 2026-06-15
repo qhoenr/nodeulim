@@ -1,0 +1,1034 @@
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* frame-wrapper: scale된 frame의 실제 높이를 잡아주는 컨테이너 */
+.frame-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.frame {
+  background-color: #3b3b3b;
+  width: 1920px;
+  height: 11880px;
+  overflow: hidden;
+  position: relative;
+  transform-origin: top left;
+}
+
+.frame > div {
+  /* 이제 frame 자체가 scale되므로 자식엔 transform 없음 */
+}
+
+.frame .intro {
+  position: absolute;
+  top: 2160px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #ffffff;
+}
+
+.frame .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  aspect-ratio: 1.47;
+  object-fit: cover;
+}
+
+.frame .div-wrapper {
+  top: 58px;
+  left: 61px;
+  background-color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25.5px;
+  letter-spacing: 0;
+  line-height: 35.7px;
+}
+
+.frame .div {
+  top: 636px;
+  left: 209px;
+  background-color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.frame .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.frame .div-wrapper-2 {
+  top: 491px;
+  left: 1516px;
+  background-color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.frame .image-2 {
+  position: absolute;
+  top: 458px;
+  left: 1441px;
+  width: 416px;
+  height: 277px;
+  aspect-ratio: 1.5;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-24@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .div-wrapper-3 {
+  top: 748px;
+  left: 1088px;
+  background-color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.frame .image-3 {
+  position: absolute;
+  top: 283px;
+  left: 196px;
+  width: 223px;
+  height: 363px;
+  aspect-ratio: 0.61;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-20@2x.png);
+  background-size: 100% 100%;
+}
+
+.frame .image-4 {
+  position: absolute;
+  top: 812px;
+  left: 1074px;
+  width: 224px;
+  height: 200px;
+  aspect-ratio: 1.12;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-22@2x.png);
+  background-size: 100% 100%;
+}
+
+.frame .element {
+  position: absolute;
+  top: 5400px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #ffffff;
+}
+
+.frame .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  aspect-ratio: 1.49;
+  object-fit: cover;
+}
+
+.frame .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25.5px;
+  letter-spacing: 0;
+  line-height: 35.7px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: 383px;
+  left: 405px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 383px;
+  left: 883px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  top: 383px;
+  left: 1387px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.frame .image-5 {
+  position: absolute;
+  top: 437px;
+  left: 308px;
+  width: 354px;
+  height: 327px;
+  aspect-ratio: 1.08;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-25@2x.png);
+  background-size: 100% 100%;
+}
+
+.frame .image-6 {
+  position: absolute;
+  top: 411px;
+  left: 811px;
+  width: 413px;
+  height: 413px;
+  aspect-ratio: 1;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-27@2x.png);
+  background-size: 100% 100%;
+}
+
+.frame .image-7 {
+  position: absolute;
+  top: 397px;
+  left: 1293px;
+  width: 389px;
+  height: 389px;
+  aspect-ratio: 1;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-26@2x.png);
+  background-size: 100% 100%;
+}
+
+.frame .vector {
+  position: absolute;
+  top: 50%;
+  left: 1831px;
+  width: 22px;
+  height: 39px;
+}
+
+.frame .vector-2 {
+  position: absolute;
+  top: 50%;
+  left: 85px;
+  width: 22px;
+  height: 39px;
+}
+
+.frame .image-8 {
+  position: absolute;
+  top: 490px;
+  left: 308px;
+  width: 354px;
+  height: 327px;
+  aspect-ratio: 1.08;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-25-1@2x.png);
+  background-size: 100% 100%;
+}
+
+.frame .image-9 {
+  position: absolute;
+  top: 447px;
+  left: 785px;
+  width: 413px;
+  height: 413px;
+  aspect-ratio: 1;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-27-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .image-10 {
+  position: absolute;
+  top: 428px;
+  left: 1293px;
+  width: 389px;
+  height: 389px;
+  aspect-ratio: 1;
+  background-image: url(https://c.animaapp.com/VJTSmCJj/img/image-26-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .intro-2 {
+  position: absolute;
+  top: 1080px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .image-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.frame .text-wrapper-6 {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 335px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 47px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 75.2px;
+}
+
+.frame .end {
+  position: absolute;
+  top: 10800px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .text-wrapper-7 {
+  position: absolute;
+  top: calc(50% - 264px);
+  left: calc(50% - 345px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 47px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 75.2px;
+  white-space: nowrap;
+}
+
+.frame .group {
+  position: absolute;
+  top: 406px;
+  left: 465px;
+  width: 990px;
+  height: 105px;
+}
+
+.frame .text-wrapper-8 {
+  position: absolute;
+  top: calc(50% + 54px);
+  left: calc(50% - 495px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffb2;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.frame .group-2 {
+  position: absolute;
+  top: 438px;
+  left: 521px;
+  width: 189px;
+  height: 48px;
+  display: flex;
+}
+
+.frame .text-wrapper-9 {
+  width: 187px;
+  height: 48px;
+  font-family: "Jeju Samdasu SpecialOTF-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 48px;
+  white-space: nowrap;
+}
+
+.frame .element-2 {
+  position: absolute;
+  top: 9720px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .image-12 {
+  position: absolute;
+  top: 417px;
+  left: 0;
+  width: 1157px;
+  height: 663px;
+  aspect-ratio: 1.63;
+  object-fit: cover;
+}
+
+.frame .text-wrapper-10 {
+  position: absolute;
+  top: calc(50% - 308px);
+  left: calc(50% + 323px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffb2;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.frame .element-3 {
+  position: absolute;
+  top: 3240px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+  overflow: hidden;
+}
+
+.frame .image-wrapper {
+  position: absolute;
+  top: 254px;
+  left: 662px;
+  width: 572px;
+  height: 1423px;
+  display: flex;
+  aspect-ratio: 0.4;
+}
+
+.frame .image-13 {
+  flex: 1;
+  width: 579.7px;
+  object-fit: cover;
+}
+
+.frame .ellipse {
+  position: absolute;
+  top: 294px;
+  left: 563px;
+  width: 770px;
+  height: 770px;
+  border-radius: 384.98px;
+  background-blend-mode: color-dodge;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.frame .text-wrapper-11 {
+  position: absolute;
+  top: calc(50% - 452px);
+  left: calc(50% - 222px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.frame .element-4 {
+  position: absolute;
+  top: 4320px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .image-14 {
+  position: absolute;
+  top: 225px;
+  left: 658px;
+  width: 580px;
+  height: 855px;
+  aspect-ratio: 0.4;
+  object-fit: cover;
+}
+
+.frame .text-wrapper-12 {
+  position: absolute;
+  top: calc(50% - 452px);
+  left: calc(50% - 624px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.frame .ellipse-2 {
+  position: absolute;
+  top: 260px;
+  left: 929px;
+  width: 184px;
+  height: 184px;
+  border-radius: 91.88px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.frame .ellipse-3 {
+  position: absolute;
+  top: 695px;
+  left: 720px;
+  width: 184px;
+  height: 184px;
+  border-radius: 91.88px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.frame .div-wrapper-4 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 631px;
+  left: 1112px;
+  background-color: #ffffff;
+}
+
+.frame .text-wrapper-13 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.frame .div-wrapper-5 {
+  top: 749px;
+  left: 512px;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.frame .text-wrapper-14 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.frame .div-wrapper-6 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 399px;
+  left: 648px;
+  background-color: #ffffff;
+}
+
+.frame .text-wrapper-15 {
+  position: relative;
+  width: 201px;
+  margin-top: -1px;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.frame .div-wrapper-7 {
+  top: 322px;
+  left: 1067px;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.frame .element-5 {
+  position: absolute;
+  top: 6480px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .text-wrapper-16 {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% + 591px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.frame .text-wrapper-17 {
+  position: absolute;
+  top: calc(50% - 344px);
+  left: calc(50% - 698px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-18 {
+  position: absolute;
+  top: calc(50% + 92px);
+  left: calc(50% + 551px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+  white-space: nowrap;
+}
+
+.frame .image-15 {
+  position: absolute;
+  top: 159px;
+  left: 160px;
+  width: 871px;
+  height: 871px;
+  aspect-ratio: 0.81;
+}
+
+.frame .image-16 {
+  position: absolute;
+  top: 93px;
+  left: 1005px;
+  width: 398px;
+  height: 398px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.frame .element-6 {
+  position: absolute;
+  top: 7560px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .text-wrapper-19 {
+  position: absolute;
+  top: calc(50% - 344px);
+  left: calc(50% - 735px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+  white-space: nowrap;
+}
+
+.frame .image-17 {
+  position: absolute;
+  top: 344px;
+  left: 755px;
+  width: 482px;
+  height: 482px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.frame .vector-3 {
+  position: absolute;
+  top: 515px;
+  left: 520px;
+  width: 108px;
+  height: 90px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .vector-4 {
+  position: absolute;
+  top: 570px;
+  left: 195px;
+  width: 118px;
+  height: 86px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .vector-5 {
+  position: absolute;
+  top: 705px;
+  left: 533px;
+  width: 106px;
+  height: 92px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .vector-6 {
+  position: absolute;
+  top: 293px;
+  left: 1286px;
+  width: 106px;
+  height: 92px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .vector-7 {
+  position: absolute;
+  top: 645px;
+  left: 1347px;
+  width: 109px;
+  height: 91px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .vector-8 {
+  position: absolute;
+  top: 396px;
+  left: 337px;
+  width: 114px;
+  height: 90px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .vector-9 {
+  position: absolute;
+  top: 426px;
+  left: 1406px;
+  width: 109px;
+  height: 89px;
+  mix-blend-mode: soft-light;
+}
+
+.frame .element-7 {
+  position: absolute;
+  top: 8640px;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .text-wrapper-20 {
+  position: absolute;
+  top: calc(50% + 390px);
+  left: calc(50% - 177px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-21 {
+  position: absolute;
+  top: calc(50% - 71px);
+  left: calc(50% + 330px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.6px;
+}
+
+.frame .image-18 {
+  position: absolute;
+  top: 149px;
+  left: 359px;
+  width: 365px;
+  height: 897px;
+  aspect-ratio: 0.4;
+  object-fit: cover;
+}
+
+.frame .ellipse-4 {
+  position: absolute;
+  top: 82px;
+  left: 259px;
+  width: 566px;
+  height: 566px;
+  border-radius: 283.03px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.frame .intro-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-color: #3b3b3b;
+}
+
+.frame .text-wrapper-22 {
+  position: absolute;
+  top: calc(50% - 188px);
+  left: calc(50% - 543px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 235.5px;
+  text-align: center;
+  letter-spacing: -18.84px;
+  line-height: 376.9px;
+  white-space: nowrap;
+}
+
+/* ── 짧은 푸터 (회색 섹션 제거 후 대체) ── */
+.site-footer {
+  width: 100%;
+  padding: 48px 0 44px;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.site-footer-title {
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+
+.site-footer-copy {
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.page-nav {
+  position: fixed;
+  top: 50%;
+  right: 19px;
+  z-index: 210;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  transform: translateY(-50%);
+  pointer-events: auto;
+}
+
+.page-nav::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  right: 2px;
+  width: 1px;
+  height: calc(100% + 44px);
+  background: rgba(255, 255, 255, 0.22);
+  pointer-events: none;
+}
+
+.page-nav-item {
+  position: relative;
+  border: 0;
+  padding: 2px 15px 2px 0;
+  background: transparent;
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: right;
+  text-transform: lowercase;
+  white-space: nowrap;
+  transition: color 0.28s ease, transform 0.28s ease;
+}
+
+.page-nav-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.46);
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: background 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+}
+
+.page-nav-item:hover,
+.page-nav-item.is-active {
+  color: rgba(255, 255, 255, 0.86);
+  transform: translateX(-4px);
+}
+
+.page-nav-item:hover::after,
+.page-nav-item.is-active::after {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.55);
+  transform: translateY(-50%) scale(1.28);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 23px;
+  bottom: 24px;
+  z-index: 210;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 0;
+  padding: 9px 12px 8px;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(9px);
+  font-family: "JejuMyeongjo-Regular", Helvetica;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+  transition: border-color 0.28s ease, color 0.28s ease, background-color 0.28s ease, transform 0.28s ease;
+}
+
+.back-to-top:hover {
+  border-color: rgba(255, 255, 255, 0.72);
+  background: rgba(0, 0, 0, 0.64);
+  color: rgba(255, 255, 255, 0.95);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 720px) {
+  .page-nav {
+    right: 12px;
+    gap: 8px;
+  }
+
+  .page-nav-item {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .back-to-top {
+    right: 14px;
+    bottom: 15px;
+    padding: 8px 10px 7px;
+    font-size: 11px;
+  }
+}
